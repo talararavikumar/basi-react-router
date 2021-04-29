@@ -1,7 +1,7 @@
 import "./styles.css";
 import React from "react";
 import About from "./About";
-import Contact from "./Contact";
+import Contacts from "./Contacts";
 import Home from "./Home";
 import Notfound from "./Notfound";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
@@ -19,13 +19,13 @@ export default function App() {
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contacts">Contact</Link>
           </li>
         </ul>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/contacts" component={Contacts} />
           <Route component={Notfound} />
         </Switch>
       </>
